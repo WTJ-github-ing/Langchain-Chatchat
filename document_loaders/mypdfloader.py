@@ -43,6 +43,8 @@ class RapidOCRPDFLoader(UnstructuredFileLoader):
 
 
 if __name__ == "__main__":
-    loader = RapidOCRPDFLoader(file_path="../tests/samples/ocr_test.pdf")
+    # loader = RapidOCRPDFLoader(file_path="../tests/samples/ocr_test.pdf")
+    loader = RapidOCRPDFLoader(file_path="../tests/samples/包含图片的11页.pdf")
+    # loader = RapidOCRPDFLoader(file_path="../tests/samples/包含表格的21页.pdf")
     docs = loader.load()
     print(docs)
