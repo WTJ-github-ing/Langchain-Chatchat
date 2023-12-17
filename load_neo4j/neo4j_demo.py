@@ -1,6 +1,7 @@
 import json
 from py2neo import Graph, Node, Relationship
 
+#这里需要结构化的数据
 # Connect to Neo4j database
 graph = Graph("neo4j+s://56338587.databases.neo4j.io", auth=("neo4j", "123qwe!!"))
 
