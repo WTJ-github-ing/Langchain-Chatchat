@@ -35,7 +35,7 @@ async def search_knowledge_base_iter(database: str, query: str) -> str:
         docs = data["docs"]
     return contents
 
-
+#需要改动的地方
 async def search_knowledge_multiple(queries) -> List[str]:
     # queries 应该是一个包含多个 (database, query) 元组的列表
     tasks = [search_knowledge_base_iter(database, query) for database, query in queries]
