@@ -1,4 +1,9 @@
 import torch
+# 驱动 11.5
+# cuda 11.4, V11.4.120
+#cudnn
+
+#pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1+cu113
 
 # 检查CUDA是否可用
 if torch.cuda.is_available():
